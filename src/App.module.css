@@ -1,0 +1,142 @@
+.App {
+  background-color: #ffef09;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.Toggle {
+  margin-left: 65%;
+
+}
+
+.ThemeEnabled {
+  font-size: 10px;
+  color: #444444;
+  background-color: rgba(34, 34, 34, 0.068);
+  border-radius: 25px ;
+  padding: 4px 20px ;
+  display: inline;
+margin: 0px 2px;
+padding-bottom:  7px;
+}
+
+.ThemeDisabled {
+  font-size: 10px;
+  color: #444444;
+  background-color: rgba(34, 34, 34, 0.171);
+
+  border-radius: 25px ;
+  padding: 4px 20px ;
+  display: inline;
+margin: 0px 2px;
+padding-bottom:  7px;
+}
+
+.App h2 {
+  color: #444444;
+  top: 0px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.CalcShapeDark {
+  background-color: #131416;
+  min-height: 75vh;
+  min-width: 50vh;
+  border-radius: 15px 15px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  box-shadow: 10px 10px 24px #0000007a;
+}
+.CalcShapeLight{
+  background-color: #f0f0f0;
+  min-height: 75vh;
+  min-width: 50vh;
+  border-radius: 15px 15px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(109, 109, 109);
+  box-shadow: 10px 10px 24px #0000007a;
+}
+.CalcNavBar {
+  height: 2vh;
+  /* background-color: rgb(56, 56, 56);
+  border-radius: 15px 15px 0px 0px ; */
+}
+.CalcGridTop {
+  height: 18vh;
+  background-color: #47473915;
+  margin: 0 5%;
+  border-radius: 7px 7px 0px 0px ;
+  display: flex;
+}
+
+.CalcGridBottom {
+  height: 55vh;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5% 5%;
+  text-align: center;
+}
+
+
+.CalcGridTop > h1 {
+  margin-left: 5%;
+  font-size: 190%;
+  align-self: flex-end;
+  
+}
+
+
+
+.CalcGridBottom > div {
+  width: 24%;
+  height: 24%;
+  background-color: #5152240a;
+  padding-right: 1px;
+  border-radius: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+.CalcGridBottom .Ce {
+  color: rgb(255, 255, 255);
+  background-color: #dd0000;
+}
+
+.CalcGridBottom > div:active {
+  color: #ffffff;
+  font-size: 21px;
+  border: solid 2px rgb(26, 26, 26);
+}
+
+.CalcGridBottom > div:hover {
+  background-color: #1d1d1d;
+  cursor: pointer;
+}
+
+.Ce:hover {
+  background-color: #f0190a !important;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+ 
+  .CalcGridTop > h1 {
+    margin-left: 5%;
+    font-size: 150%;
+    align-self: flex-end;
+  }
+  
+}
